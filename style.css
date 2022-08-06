@@ -1,0 +1,32 @@
+.accardion > div > span {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.accardion > div > span:after {
+    content: "\002b";
+    float: right;
+}
+    .accardion > div.show > span:after {
+        content: "\2212";
+}
+.accardion > div > span:hover,
+.accardion > div.show > span {
+    background-color: #ccc;
+
+}
+.accardion > div > div {
+    padding: 15px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    display: none;
+
+
+}
+.accardion > div.show > div {
+    display: block;
+}
